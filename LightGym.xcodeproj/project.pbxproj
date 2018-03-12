@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D0F76833C4F47860FA6C383 /* Pods_LightGym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8790A63165249A32923205F6 /* Pods_LightGym.framework */; };
+		C2584AD220572B0B00B2289E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2584AD120572B0B00B2289E /* Date+Extensions.swift */; };
+		C2A1291C2057249F003E6361 /* WorkOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A1291B2057249F003E6361 /* WorkOut.swift */; };
 		C2D482DA20571F9E00330A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D482D920571F9E00330A25 /* AppDelegate.swift */; };
 		C2D482DC20571F9E00330A25 /* WorkOutListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D482DB20571F9E00330A25 /* WorkOutListController.swift */; };
 		C2D482DF20571F9E00330A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D482DD20571F9E00330A25 /* Main.storyboard */; };
@@ -19,6 +21,8 @@
 		6DAB1569B5E5C7D950A8D648 /* Pods-LightGym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightGym.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightGym/Pods-LightGym.debug.xcconfig"; sourceTree = "<group>"; };
 		8790A63165249A32923205F6 /* Pods_LightGym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightGym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92582B70474383C4EC30E728 /* Pods-LightGym.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightGym.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightGym/Pods-LightGym.release.xcconfig"; sourceTree = "<group>"; };
+		C2584AD120572B0B00B2289E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		C2A1291B2057249F003E6361 /* WorkOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOut.swift; sourceTree = "<group>"; };
 		C2D482D620571F9E00330A25 /* LightGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D482D920571F9E00330A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2D482DB20571F9E00330A25 /* WorkOutListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutListController.swift; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C2584AD020572AF600B2289E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2584AD120572B0B00B2289E /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C2A129172057214E003E6361 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 		C2A129192057216C003E6361 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C2A1291B2057249F003E6361 /* WorkOut.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				C2D482D920571F9E00330A25 /* AppDelegate.swift */,
+				C2584AD020572AF600B2289E /* Extensions */,
 				C2A129192057216C003E6361 /* Model */,
 				C2A129172057214E003E6361 /* Views */,
 				C2A1291820572160003E6361 /* Controllers */,
@@ -251,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2584AD220572B0B00B2289E /* Date+Extensions.swift in Sources */,
 				C2D482DC20571F9E00330A25 /* WorkOutListController.swift in Sources */,
 				C2D482DA20571F9E00330A25 /* AppDelegate.swift in Sources */,
+				C2A1291C2057249F003E6361 /* WorkOut.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
