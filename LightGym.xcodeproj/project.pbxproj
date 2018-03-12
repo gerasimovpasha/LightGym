@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0F76833C4F47860FA6C383 /* Pods_LightGym.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8790A63165249A32923205F6 /* Pods_LightGym.framework */; };
 		C2D482DA20571F9E00330A25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D482D920571F9E00330A25 /* AppDelegate.swift */; };
-		C2D482DC20571F9E00330A25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D482DB20571F9E00330A25 /* ViewController.swift */; };
+		C2D482DC20571F9E00330A25 /* WorkOutListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D482DB20571F9E00330A25 /* WorkOutListController.swift */; };
 		C2D482DF20571F9E00330A25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D482DD20571F9E00330A25 /* Main.storyboard */; };
 		C2D482E120571F9E00330A25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2D482E020571F9E00330A25 /* Assets.xcassets */; };
 		C2D482E420571F9E00330A25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2D482E220571F9E00330A25 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DAB1569B5E5C7D950A8D648 /* Pods-LightGym.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightGym.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LightGym/Pods-LightGym.debug.xcconfig"; sourceTree = "<group>"; };
+		8790A63165249A32923205F6 /* Pods_LightGym.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LightGym.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92582B70474383C4EC30E728 /* Pods-LightGym.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LightGym.release.xcconfig"; path = "Pods/Target Support Files/Pods-LightGym/Pods-LightGym.release.xcconfig"; sourceTree = "<group>"; };
 		C2D482D620571F9E00330A25 /* LightGym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightGym.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D482D920571F9E00330A25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2D482DB20571F9E00330A25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C2D482DB20571F9E00330A25 /* WorkOutListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOutListController.swift; sourceTree = "<group>"; };
 		C2D482DE20571F9E00330A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2D482E020571F9E00330A25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2D482E320571F9E00330A25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,17 +33,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0F76833C4F47860FA6C383 /* Pods_LightGym.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D6503C32D91F16DF5C4F097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8790A63165249A32923205F6 /* Pods_LightGym.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEEF84B24BBFE5EC1387E24B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DAB1569B5E5C7D950A8D648 /* Pods-LightGym.debug.xcconfig */,
+				92582B70474383C4EC30E728 /* Pods-LightGym.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C2A129172057214E003E6361 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2D482DD20571F9E00330A25 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2A1291820572160003E6361 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2D482DB20571F9E00330A25 /* WorkOutListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C2A129192057216C003E6361 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2A1291A20572191003E6361 /* Additional Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2D482E020571F9E00330A25 /* Assets.xcassets */,
+				C2D482E220571F9E00330A25 /* LaunchScreen.storyboard */,
+			);
+			path = "Additional Files";
+			sourceTree = "<group>";
+		};
 		C2D482CD20571F9E00330A25 = {
 			isa = PBXGroup;
 			children = (
 				C2D482D820571F9E00330A25 /* LightGym */,
 				C2D482D720571F9E00330A25 /* Products */,
+				BEEF84B24BBFE5EC1387E24B /* Pods */,
+				6D6503C32D91F16DF5C4F097 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,10 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				C2D482D920571F9E00330A25 /* AppDelegate.swift */,
-				C2D482DB20571F9E00330A25 /* ViewController.swift */,
-				C2D482DD20571F9E00330A25 /* Main.storyboard */,
-				C2D482E020571F9E00330A25 /* Assets.xcassets */,
-				C2D482E220571F9E00330A25 /* LaunchScreen.storyboard */,
+				C2A129192057216C003E6361 /* Model */,
+				C2A129172057214E003E6361 /* Views */,
+				C2A1291820572160003E6361 /* Controllers */,
+				C2A1291A20572191003E6361 /* Additional Files */,
 				C2D482E520571F9E00330A25 /* Info.plist */,
 			);
 			path = LightGym;
@@ -71,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C2D482E820571F9E00330A25 /* Build configuration list for PBXNativeTarget "LightGym" */;
 			buildPhases = (
+				E90B474565E9496B4E7A2040 /* [CP] Check Pods Manifest.lock */,
 				C2D482D220571F9E00330A25 /* Sources */,
 				C2D482D320571F9E00330A25 /* Frameworks */,
 				C2D482D420571F9E00330A25 /* Resources */,
+				0E394C87EBD983DAB86A7C39 /* [CP] Embed Pods Frameworks */,
+				F9F68946FAAE258BB602C8DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +190,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0E394C87EBD983DAB86A7C39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LightGym/Pods-LightGym-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightGym/Pods-LightGym-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E90B474565E9496B4E7A2040 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LightGym-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F68946FAAE258BB602C8DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LightGym/Pods-LightGym-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C2D482D220571F9E00330A25 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2D482DC20571F9E00330A25 /* ViewController.swift in Sources */,
+				C2D482DC20571F9E00330A25 /* WorkOutListController.swift in Sources */,
 				C2D482DA20571F9E00330A25 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +387,7 @@
 		};
 		C2D482E920571F9E00330A25 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DAB1569B5E5C7D950A8D648 /* Pods-LightGym.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +403,7 @@
 		};
 		C2D482EA20571F9E00330A25 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92582B70474383C4EC30E728 /* Pods-LightGym.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
